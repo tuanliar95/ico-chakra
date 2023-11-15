@@ -1,16 +1,19 @@
 import { ConnectWallet } from "@/components";
-import { Flex } from "@chakra-ui/layout";
+import { Flex, Heading, Spacer } from "@chakra-ui/layout";
 import React from "react";
 
 export default function InvestView() {
   return (
     <Flex
       w={{ base: "full", lg: "70%" }}
-      flexDirection="column"
       margin="50px auto"
-      bg={"red"}
+      flexDirection="row"
+      justifyContent='space-between'
     >
-      <ConnectWallet/>
+      <Heading size="lg" fontWeight="bold">
+        Blockchain traine
+      </Heading>
+      <ConnectWallet style={{ background: "blue", color: "white" }} />
     </Flex>
   );
 }
