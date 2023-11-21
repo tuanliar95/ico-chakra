@@ -1,5 +1,10 @@
-import { ConnectWallet } from "./ConnectWallet";
+import ConnectWallet from "./ConnectWallet";
+import WalletInfo  from "./WalletInfo";
+import SuccessModal from "./SuccessModal";
+
 
 export {
-    ConnectWallet
+  ConnectWallet,
+  WalletInfo,
+  SuccessModal
 }
