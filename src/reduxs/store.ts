@@ -9,9 +9,9 @@ export type AppStore = Omit<Store<RootState, AnyAction>, "dispatch"> & {
 };
 
 const store = configureStore({
-  // devTools: process.env.NODE_ENV !== 'production',
-  reducer: {},
-  // middleware: (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck: false}),
+  devTools: process.env.NODE_ENV !== 'production',
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck: false}),
 })
 
 export default store
