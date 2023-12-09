@@ -1,8 +1,8 @@
-import { ChakraProvider, ThemeConfig, extendTheme, ComponentStyleConfig, extendBaseTheme } from '@chakra-ui/react'
+import { ChakraProvider, ThemeConfig, extendTheme, ComponentStyleConfig } from '@chakra-ui/react'
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
-  // useSystemColorMode: false,
+  useSystemColorMode: false,
 }
 
 const Button: ComponentStyleConfig = {
